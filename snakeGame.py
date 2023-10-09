@@ -104,7 +104,7 @@ def getDistance(pos1, pos2):
 score = 0
 screen = turtle.Screen()
 screen.setup(WIDTH, HEIGHT)
-screen.bgcolor("cyan")
+screen.bgcolor("white")
 screen.tracer(0)   # If not 0, it will start drawing snake before erasing it with clearstamps() above
 
 # Listen for arrow keys being pressed
@@ -119,9 +119,9 @@ bindDirection()     # New way to set direction
 
 # Set up food
 food = turtle.Turtle()
-food.shape("circle")
+food.shape("square")
 food.shapesize(FOODSIZE/20)
-food.color("red")
+food.color("blue")
 food.penup()
 foodPos = newFoodPos()
 food.goto(foodPos)
@@ -131,7 +131,8 @@ food.goto(foodPos)
 
 # Set up snake
 snake = turtle.Turtle()
-snake.shape("square")
+snake.shape("circle")
+snake.color("red")
 snake.penup()
 
 snakeBody = [[0, 0], [20, 0], [40, 0], [60, 0]]
