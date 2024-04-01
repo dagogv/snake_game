@@ -13,6 +13,7 @@ offsets = { "up": (0, 20),
            }
 
 # Old way of setting direction according to arrow key pressed
+#
 # def goUp():
 #     global snakeDirection
 #     if snakeDirection != "down":    # if snake returns from direction it will just over draw
